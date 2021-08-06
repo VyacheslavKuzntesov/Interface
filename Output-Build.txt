@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: Interface, Configuration: Debug Win32 ------
+1>Interface.vcxproj -> C:\Users\Admin\source\repos\Interface\Debug\Interface.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
