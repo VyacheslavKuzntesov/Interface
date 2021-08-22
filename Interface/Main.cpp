@@ -130,7 +130,7 @@ void main()
 			cout << "Функцию Fibonacci которая выводит ряд Фибоначчи, до указанного числа" << endl;
 			cout << "Введите число: "; cin >> chislo;
 			cout << "Ряд фибоначчи: ";
-			for (int i = 0; fibonacci(i) < chislo; i++)cout << fibonacci(i) << tab;
+			FibonacciPrintDoChisla(chislo, 0);
 			cout << endl;
 			system("pause");
 			break;
@@ -139,7 +139,7 @@ void main()
 			cout << "Функцию Fibonacci которая выводит заданное количество значений из ряда Фибоначчи" << endl;
 			cout << "Введите число: "; cin >> chislo;
 			cout << "Ряд фибоначчи: ";
-			for (int i = 0; i < chislo; i++)cout << fibonacci(i) << tab;
+			FibonacciPrintKol(chislo,0);
 			cout << endl;
 			system("pause");
 			break;

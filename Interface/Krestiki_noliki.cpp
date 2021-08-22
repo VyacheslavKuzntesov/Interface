@@ -19,7 +19,7 @@ void vuvod_krestiki_noliki_s_nomerami()
 {
 	setlocale(LC_ALL, ".866");
 	cout << " " << "       " << (char)179 << "       " << (char)179 << "       " << endl;
-	cout << " " << "   " << "1" << "   " << (char)179 << "   " << "2" << "   " << (char)179 << "   " << "3" << "   " << endl;
+	cout << " " << "   " << "7" << "   " << (char)179 << "   " << "8" << "   " << (char)179 << "   " << "9" << "   " << endl;
 	cout << " " << "       " << (char)179 << "       " << (char)179 << "       " << endl;
 	cout << " " << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)197 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)197 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << endl;
 	cout << " " << "       " << (char)179 << "       " << (char)179 << "       " << endl;
@@ -27,7 +27,7 @@ void vuvod_krestiki_noliki_s_nomerami()
 	cout << " " << "       " << (char)179 << "       " << (char)179 << "       " << endl;
 	cout << " " << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)197 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)197 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << (char)196 << endl;
 	cout << " " << "       " << (char)179 << "       " << (char)179 << "       " << endl;
-	cout << " " << "   " << "7" << "   " << (char)179 << "   " << "8" << "   " << (char)179 << "   " << "9" << "   " << endl;
+	cout << " " << "   " << "1" << "   " << (char)179 << "   " << "2" << "   " << (char)179 << "   " << "3" << "   " << endl;
 	cout << " " << "       " << (char)179 << "       " << (char)179 << "       " << endl;
 }
 
@@ -43,103 +43,137 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 	if (arr[0][0] == Krestik && arr[1][1] == Krestik && arr[2][2] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[0][2] == Krestik && arr[1][1] == Krestik && arr[2][0] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[0][0] == Krestik && arr[0][1] == Krestik && arr[0][2] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[1][0] == Krestik && arr[1][1] == Krestik && arr[1][2] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[2][0] == Krestik && arr[2][1] == Krestik && arr[2][2] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[0][0] == Krestik && arr[1][0] == Krestik && arr[2][0] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[0][1] == Krestik && arr[1][1] == Krestik && arr[2][1] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[0][2] == Krestik && arr[1][2] == Krestik && arr[2][2] == Krestik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 1";
 		return;
 	}
 	else if (arr[0][0] == Nolik && arr[1][1] == Nolik && arr[2][2] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (arr[0][2] == Nolik && arr[1][1] == Nolik && arr[2][0] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (arr[0][0] == Nolik && arr[0][1] == Nolik && arr[0][2] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (arr[1][0] == Nolik && arr[1][1] == Nolik && arr[1][2] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (arr[2][0] == Nolik && arr[2][1] == Nolik && arr[2][2] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (arr[0][0] == Nolik && arr[1][0] == Nolik && arr[2][0] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (arr[0][1] == Nolik && arr[1][1] == Nolik && arr[2][1] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (arr[0][2] == Nolik && arr[1][2] == Nolik && arr[2][2] == Nolik)
 	{
 		system("cls");
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
 		cout << endl << "Выграл игрок 2";
 		return;
 	}
 	else if (hod == 0)
 	{
 		system("cls");
-		cout << "Ничья";
+		vuvod_krestiki_noliki(arr);
+		setlocale(LC_ALL, "Rus");
+		cout << endl <<"Ничья";
 		return;
 	}
 
@@ -164,7 +198,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 		{
 			switch (vubor_yacheyki)
 			{
-			case '1':
+			case '7':
 				if (arr[0][0] == Probel)
 				{
 					arr[0][0] = Krestik;
@@ -178,7 +212,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '2':
+			case '8':
 				if (arr[0][1] == Probel)
 				{
 					arr[0][1] = Krestik;
@@ -192,7 +226,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '3':
+			case '9':
 				if (arr[0][2] == Probel)
 				{
 					arr[0][2] = Krestik;
@@ -248,7 +282,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '7':
+			case '1':
 				if (arr[2][0] == Probel)
 				{
 					arr[2][0] = Krestik;
@@ -262,7 +296,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '8':
+			case '2':
 				if (arr[2][1] == Probel)
 				{
 					arr[2][1] = Krestik;
@@ -276,7 +310,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '9':
+			case '3':
 				if (arr[2][2] == Probel)
 				{
 					arr[2][2] = Krestik;
@@ -300,7 +334,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 		{
 			switch (vubor_yacheyki)
 			{
-			case '1':
+			case '7':
 				if (arr[0][0] == Probel)
 				{
 					arr[0][0] = Nolik;
@@ -314,7 +348,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '2':
+			case '8':
 				if (arr[0][1] == Probel)
 				{
 					arr[0][1] = Nolik;
@@ -328,7 +362,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '3':
+			case '9':
 				if (arr[0][2] == Probel)
 				{
 					arr[0][2] = Nolik;
@@ -384,7 +418,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '7':
+			case '1':
 				if (arr[2][0] == Probel)
 				{
 					arr[2][0] = Nolik;
@@ -398,7 +432,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '8':
+			case '2':
 				if (arr[2][1] == Probel)
 				{
 					arr[2][1] = Nolik;
@@ -412,7 +446,7 @@ void krestiki_noliki(char arr[ROWS][COLS], int hod, int hod_igroka, int computer
 					system("pause");
 					break;
 				}
-			case '9':
+			case '3':
 				if (arr[2][2] == Probel)
 				{
 					arr[2][2] = Nolik;
