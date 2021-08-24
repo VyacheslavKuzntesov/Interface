@@ -72,11 +72,6 @@ int Factorial(int n)
 int Power(int chislo, int stepen)
 {
 	if (stepen == 1) return chislo;
-	if (stepen < 0)
-	{
-		stepen *= -1;
-		return chislo * Power(chislo, stepen - 1) * -1;
-	}
 	else
 	{
 		return chislo * Power(chislo, stepen - 1);
