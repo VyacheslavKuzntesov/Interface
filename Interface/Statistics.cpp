@@ -69,11 +69,15 @@ int Factorial(int n)
 	return Factorial(n - 1) * n;
 }
 
-int Power(int chislo, int stepen)
-{
-	if (stepen == 1) return chislo;
-	else
+double  Power(int chislo, int stepen)
+{	
+	if (stepen < 0)
 	{
-		return chislo * Power(chislo, stepen - 1);
-	}		
+		return 1.0 / Power(chislo, -stepen);
+	}
+	if (stepen == 0)
+	{
+		return 1.0;
+	}
+	return chislo * Power(chislo, stepen - 1);
 }
