@@ -1,9 +1,23 @@
-﻿#include"stdafx.h"
+﻿//#define Old_Version_Menu
+#define New_Version_Menu
+
+#include"stdafx.h"
+
+
+#ifdef New_Version_Menu
+#include"Menu.h"  
+#endif // New_Version_Menu
+
+
+#ifdef Old_Version_Menu
 #include"Krestiki_noliki.h"
-#include"Statistics.h"
+#include"Statistics.h"  
+#endif // Old_Version_Menu
+
 
 void main()
 {
+#ifdef Old_Version_Menu
 	char vubor_progarmmu = '1';
 	char klavisha;
 	int chislo;
@@ -139,7 +153,7 @@ void main()
 			cout << "Функцию Fibonacci которая выводит заданное количество значений из ряда Фибоначчи" << endl;
 			cout << "Введите число: "; cin >> chislo;
 			cout << "Ряд фибоначчи: ";
-			FibonacciPrintKol(chislo,0);
+			FibonacciPrintKol(chislo, 0);
 			cout << endl;
 			system("pause");
 			break;
@@ -160,4 +174,16 @@ void main()
 			break;
 		}
 	} while (klavisha != Escape);
-}
+#endif // Old_Version_Menu
+
+
+#ifdef New_Version_Menu
+	char a = '1';
+	do
+	{
+		a = menu(a);
+		programmu(a);
+	} while (a != '7');
+#endif // New_Version_Menu
+
+}	
